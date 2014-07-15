@@ -14,8 +14,8 @@ f = open('constraints.txt','w')
 for i in range(0, LENGTH):
 	const = "INST \"" + INST_P1 + str(i) + INST_P2 + "0\" BEL = " + BEL_INST0 + ";\n"
 	const += "INST \"" + INST_P1 + str(i) + INST_P2 + "0\" LOC = SLICE_X" + str(X_INDEX) + "Y" + str(Y_START-i) + ";\n"
-	const += "INST \"" + INST_P1 + str(i) + INST_P2 + "0\" BEL = " + BEL_INST0 + ";\n"
-	const += "INST \"" + INST_P1 + str(i) + INST_P2 + "0\" LOC = SLICE_X" + str(X_INDEX) + "Y" + str(Y_START-i) + ";\n\n"
+	const += "INST \"" + INST_P1 + str(i) + INST_P2 + "1\" BEL = " + BEL_INST1 + ";\n"
+	const += "INST \"" + INST_P1 + str(i) + INST_P2 + "1\" LOC = SLICE_X" + str(X_INDEX) + "Y" + str(Y_START-i) + ";\n\n"
 	
 	f.write(const)
 
